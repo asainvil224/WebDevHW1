@@ -1,0 +1,62 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+ .bg-brown{
+    background-color: sandybrown;
+  }
+
+ /* Make the form container take full width */
+.contact-form {
+  width: 100%;
+  max-width: 100%; /* Remove max-width limitation */
+  margin: 0; /* Remove auto centering */
+  padding: 20px 40px; /* optional padding */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Make form height stretch if needed */
+  justify-content: center; /* vertically center contents if height > content */
+}
+
+/* Inputs and textarea styling */
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: sandybrown;
+  padding: 20px 40px;
+  outline: none;
+  color: black;
+  transition: 0.5s;
+}
+
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px grey;
+}
+
+textarea.contact-form-text {
+  resize: none;
+  border: 0;
+}
+
+/* Submit button styling */
+.contact-form-btn {
+  align-self: flex-end; 
+  background: sandybrown;
+  color: grey;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contact-form-btn:hover {
+  background: black;
+  color: white;
+}
